@@ -1,36 +1,74 @@
 
-  
-    <div class="ui red vertical demo sidebar menu">
-      <a class="item">
-        <%= semantic_icon('home') %>
-        Welcome
-      </a>
-      <a class="active item">
-        <i class="heart icon"></i>
-        Stores
-      </a>
-      <a class="item">
-        <i class="facebook icon"></i>
-        Social
-      </a>
-    </div>
-  </div>
 
-  <div class='ui button' id="sidebar">sidebar</div>
-  <p>
-    welcome
-    stores 
-    dining
-    food promos
-    whats new
-    map
-    hours
-    gift card
-    social
-    employment
-    movies
-    notices
-    directions
-    contest
-    settings
-  </p>
+<div class="ui red vertical demo sidebar menu">
+  <%= link_to root_url, class: 'item' do %>
+  <%= semantic_icon('home') %>
+  Welcome
+  <% end %>
+  <%= link_to root_url, class: 'item' do %>
+  <%= semantic_icon('cart') %>
+  Stores
+  <% end %>
+  <%= link_to root_url, class: 'item' do %>
+  <%= semantic_icon('food') %>
+  Dining
+  <% end %>
+  <%= link_to root_url, class: 'item' do %>
+  <%= semantic_icon('star') %>
+  Promos
+  <% end %>
+  <%= link_to root_url, class: 'item' do %>
+  <%= semantic_icon('exclamation') %>
+  <p class='two_words'>What's new</p>
+  <% end %>
+  <%= link_to root_url, class: 'item' do %>
+  <%= semantic_icon('map') %>
+  Map
+  <% end %>
+  <%= link_to root_url, class: 'item' do %>
+  <%= semantic_icon('time') %>
+  Hours
+  <% end %>
+  <%= link_to root_url, class: 'item' do %>
+  <%= semantic_icon('gift') %>
+  Gift Card
+  <% end %>
+  <%= link_to root_url, class: 'item' do %>
+  <%= semantic_icon('facebook') %>
+  Social
+  <% end %>
+  <%= link_to root_url, class: 'item' do %>
+  <%= semantic_icon('text file outline') %>
+  <p class='two_words'>Employment</p>
+  <% end %>
+  <%= link_to root_url, class: 'item' do %>
+  <%= semantic_icon('photo') %>
+  Movies
+  <% end %>
+  <%= link_to root_url, class: 'item' do %>
+  <%= semantic_icon('bolt') %>
+  Notices
+  <% end %>
+  <%= link_to root_url, class: 'item' do %>
+  <%= semantic_icon('location') %>
+  Directions
+  <% end %>
+  <%= link_to root_url, class: 'item' do %>
+  <%= semantic_icon('trophy') %>
+  Contests
+  <% end %>
+  <%= link_to root_url, class: 'item' do %>
+  <%= semantic_icon('setting') %>
+  Settings
+  <% end %>
+</div>
+
+<div class='ui button' id="sidebar">sidebar</div>
+
+<script>
+  $(document).ready(function(){
+    $("#sidebar").on('click', function(){
+      $('.demo.sidebar').sidebar('toggle');
+    });
+  });
+</script>
