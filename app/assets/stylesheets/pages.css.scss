@@ -9,3 +9,12 @@
   // border-color: black;
   // padding: 1em; 
 }
+
+body > div.ui.red.vertical.demo.sidebar.menu {
+  width: 125px !important;
+  margin-left: -125px !important;
+}
+
+body > div.ui.red.vertical.demo.sidebar.menu.active {
+  margin-left:  0px !important;
+}
