@@ -13,7 +13,8 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 gem 'therubyracer',  platforms: :ruby
-gem 'd3_rails', '~> 3.4.8'
+gem 'semantic-ui-sass', '~> 0.16.1.0'
+#gem 'd3_rails', '~> 3.4.8'
 gem 'quiet_assets', :group => :development
 #gem 'omniauth-steam'
 gem 'figaro'
