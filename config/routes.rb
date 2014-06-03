@@ -1,11 +1,12 @@
 Rails.application.routes.draw do
   get 'stores/index'
-
-  get 'stores/show'
+  get 'stores/show/:id', to: 'stores#show', as: 'store'
+  get 'stores/dining'
 
   root 'pages#index'
-
   get 'pages/index'
+
+
     
   #get '/stores', to: 'pages#stores', :as => 'stores'
   

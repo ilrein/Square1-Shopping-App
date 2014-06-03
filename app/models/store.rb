@@ -1,5 +1,5 @@
 class Store < ActiveRecord::Base
   searchable do 
-    text :name 
+    text :name
   end 
 end

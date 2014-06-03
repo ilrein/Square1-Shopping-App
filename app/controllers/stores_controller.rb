@@ -1,12 +1,21 @@
 class StoresController < ApplicationController
   def index
-    @allstores = Store.all
-    @search = Store.search do 
-      fulltext params[:search]
-    end
-    @searchedstores = @search.results
+    @stores = Store.all
+    if params[:search].present?
+      search = Store.search do 
+        fulltext params[:search]
+      end
+      @stores = search.results
+    else
+      @stores = []
+    end  
   end
 
   def show
+    @store = Store.find(params[:id])
+  end
+
+  def dining
+    @stores = Store.where(classification: 'diner')
   end
 end

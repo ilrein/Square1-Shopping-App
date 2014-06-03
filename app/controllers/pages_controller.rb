@@ -1,8 +1,6 @@
 class PagesController < ApplicationController
   def index
   end
-  def dining
-  end
   def promos
   end
   def whatsnew
