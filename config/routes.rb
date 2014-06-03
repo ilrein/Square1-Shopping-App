@@ -1,6 +1,14 @@
 Rails.application.routes.draw do
-  get 'pages/index'
+  get 'stores/index'
+
+  get 'stores/show'
+
   root 'pages#index'
+
+  get 'pages/index'
+    
+  #get '/stores', to: 'pages#stores', :as => 'stores'
+  
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

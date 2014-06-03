@@ -1,11 +1,9 @@
-
-
 <div class="ui red vertical demo sidebar menu">
   <%= link_to root_url, class: 'item' do %>
   <%= semantic_icon('home') %>
   Welcome
   <% end %>
-  <%= link_to root_url, class: 'item' do %>
+  <%= link_to stores_index_path, class: 'item' do %>
   <%= semantic_icon('cart') %>
   Stores
   <% end %>
@@ -63,7 +61,9 @@
   <% end %>
 </div>
 
-<div class='ui button' id="sidebar">sidebar</div>
+<div class='ui button tiny' id="sidebar">
+  <%= semantic_icon('indent left') %>
+</div>
 
 <script>
   $(document).ready(function(){
