@@ -1,0 +1,8 @@
+<h1>Promotions!</h1>
+
+<% @promotions.each do |promotion| %>
+<div class='ui segment'>
+  <%= promotion.name %> @ <%= promotion.store.name %><br>
+  <%= promotion.description %>
+</div>
+<% end %>

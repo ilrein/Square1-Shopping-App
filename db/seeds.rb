@@ -7,7 +7,14 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 diners = Store.create([
-    {name: "Goomba's Bar", level: 1, classification: "diner"}, 
-    {name: "Yoshi's Island", level: 1, classification: "diner"},
-    {name: "Chain Chomp Chomps", level: 1, classification: "diner"}
-  ])
+  {name: "Goomba's Bar", level: 1, classification: "diner"}, 
+  {name: "Yoshi's Island", level: 1, classification: "diner"},
+  {name: "Chain Chomp Chomps", level: 1, classification: "diner"}
+])
+
+promotions = Promotion.create([
+  {name: 'Mega Mushrooms Sale', description: '40% off your favourite shrooms',
+   store_id: 1},
+   {name: 'Yoshi Cookies', description: '80% off the tastiest yoshi cookies',
+   store_id: 2}
+])

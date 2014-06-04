@@ -1,14 +1,6 @@
 class StoresController < ApplicationController
   def index
-    @stores = Store.all
-    if params[:search].present?
-      search = Store.search do 
-        fulltext params[:search]
-      end
-      @stores = search.results
-    else
-      @stores = []
-    end  
+    @stores = Store.all  
   end
 
   def show

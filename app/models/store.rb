@@ -1,5 +1,3 @@
 class Store < ActiveRecord::Base
-  searchable do 
-    text :name
-  end 
+  has_many :promotions 
 end
