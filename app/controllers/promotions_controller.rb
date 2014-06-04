@@ -4,4 +4,7 @@ class PromotionsController < ApplicationController
   end
   def index
   end
+  def show
+    @promotion = Promotion.find(params[:id])
+  end
 end

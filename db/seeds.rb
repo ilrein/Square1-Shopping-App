@@ -14,7 +14,7 @@ diners = Store.create([
 
 promotions = Promotion.create([
   {name: 'Mega Mushrooms Sale', description: '40% off your favourite shrooms',
-   store_id: 1},
+   store_id: 1, start_date: '2014-06-14', end_date: '2014-06-24'},
    {name: 'Yoshi Cookies', description: '80% off the tastiest yoshi cookies',
-   store_id: 2}
+   store_id: 2, start_date: '2014-06-14', end_date: '2014-06-30'}
 ])

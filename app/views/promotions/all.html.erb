@@ -1,8 +1,12 @@
 <h1>Promotions!</h1>
 
+
 <% @promotions.each do |promotion| %>
+<%= link_to store_promotion_path(promotion.store_id, promotion) do %>
 <div class='ui segment'>
   <%= promotion.name %> @ <%= promotion.store.name %><br>
+  <%= promotion.start_date %> - <%= promotion.end_date %><br>
   <%= promotion.description %>
 </div>
+<% end %>
 <% end %>
