@@ -11,7 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140604150140) do
+ActiveRecord::Schema.define(version: 20140604172727) do
+
+  create_table "characters", force: true do |t|
+    t.string   "avatar"
+    t.string   "name"
+    t.integer  "store_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "promotions", force: true do |t|
     t.string   "name"

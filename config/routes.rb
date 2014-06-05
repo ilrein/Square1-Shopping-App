@@ -1,17 +1,18 @@
 Rails.application.routes.draw do
 
-  resources :store do 
-    resources :promotions
-  end
-
+  get 'stores/dining', to: 'stores#dining'
+  
   get 'promotions/all'
 
   get 'stores/index'
-  get 'stores/dining'
+  
   get 'pages/index'
 
   root 'pages#index'
   
+  resources :stores do 
+    resources :promotions
+  end
 
 
     

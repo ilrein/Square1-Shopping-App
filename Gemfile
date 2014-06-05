@@ -19,7 +19,7 @@ gem 'semantic-ui-sass', '~> 0.16.1.0'
 gem 'quiet_assets', :group => :development
 #gem 'omniauth-steam'
 gem 'figaro'
-gem 'rmagick', '2.13.2'
+#gem 'rmagick', '2.13.2'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks

@@ -1,0 +1,28 @@
+
+  // welcome page
+
+#index {
+  width:100%;
+  height: 100%;
+  background-image: url("marioisland.jpeg");
+}
+
+#mario_title {
+  position: relative;
+}
+
+.character_posts {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5em;
+  width: 75%;
+}
+
+.ui.segment.post {
+
+}
+
+.post_header {
+  font-size: 1.5em;
+  color: #1C9FE7;
+}
