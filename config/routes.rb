@@ -1,12 +1,17 @@
 Rails.application.routes.draw do
 
+  get 'characters/index'
+
+  get 'characters/whatsnew'
+
   get 'stores/dining', to: 'stores#dining'  
   get 'promotions/all'
   get 'stores/index'
-  get 'pages/index'
-  get 'pages/whatsnew', to: 'pages#whatsnew', as: 'whatsnew'
+  
+  get 'characters/index', to: 'characters#index', as: ''
+  get 'characters/whatsnew', to: 'characters#whatsnew', as: 'whatsnew'    
 
-  root 'pages#index'
+  root 'characters#index'
   
   resources :stores do 
     resources :promotions

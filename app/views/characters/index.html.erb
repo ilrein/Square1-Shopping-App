@@ -1,0 +1,16 @@
+<div id='index'>
+  <h1 class='page_specific_header' id="mario_title">Welcome to Mario's World!</h1>
+  <div class="character_posts">
+      <%= render 'character_post.html.erb' %>
+  </div>
+</div>
+
+<script>
+$(document).ready(function(){
+  var title = $('#mario_title');
+  var tl = new TimelineLite();
+
+      //tl.to(title, 1.8, {top:50, fontSize:24, ease:Back.easeOut});
+
+});
+</script>

@@ -1,0 +1,14 @@
+<% @characters.each do |character| %>
+  <div class='ui segment post'>
+    <%= image_tag(character.avatar, size:'75x75', class: 'ui small left floated image') %>
+    <%= link_to store_path(character.store_id) do %>
+    <p class='post_header'>  
+      <%= character.name %> @ <%= character.store.name %>
+    </p>
+    <% end %>
+
+    <p> yada yada yada </p>
+    
+  </div>
+<% end %>
+  

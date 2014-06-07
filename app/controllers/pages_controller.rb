@@ -1,11 +1,6 @@
 class PagesController < ApplicationController
   def index
   end
-  def promos
-  end
-  def whatsnew
-    @bowser = Character.where(name: 'Bowser')
-  end
   def map
   end
   def hours
