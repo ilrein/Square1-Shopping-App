@@ -1,12 +1,10 @@
 Rails.application.routes.draw do
 
-  get 'stores/dining', to: 'stores#dining'
-  
+  get 'stores/dining', to: 'stores#dining'  
   get 'promotions/all'
-
   get 'stores/index'
-  
   get 'pages/index'
+  get 'pages/whatsnew', to: 'pages#whatsnew', as: 'whatsnew'
 
   root 'pages#index'
   

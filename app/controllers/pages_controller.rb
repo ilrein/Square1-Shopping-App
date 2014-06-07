@@ -4,6 +4,7 @@ class PagesController < ApplicationController
   def promos
   end
   def whatsnew
+    @bowser = Character.where(name: 'Bowser')
   end
   def map
   end
