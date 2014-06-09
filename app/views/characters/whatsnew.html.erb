@@ -1,2 +1,10 @@
-<h1>Characters#whatsnew</h1>
-<p>Find me in app/views/characters/whatsnew.html.erb</p>
+<h1 class='page_specific_header'>What's New @ Mario's Kingdom</h1>
+
+<% @bowser.posts.each do |post| %>
+<div class='ui segment bowser_post'>
+  <%= image_tag(@bowser.avatar, size: '65x65', class: "bowser") %>
+  <div class='post_header'><%= post.title %> </div>
+    <div class='post_timestamp'>@ <%= post.created_at %></div>
+  <div class='post_body'><%= post.body %></div>
+</div>
+<% end %>

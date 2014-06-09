@@ -4,5 +4,6 @@ class CharactersController < ApplicationController
   end
 
   def whatsnew
+    @bowser = Character.find(6)
   end
 end

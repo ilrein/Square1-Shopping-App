@@ -1,11 +1,13 @@
 <div class='page_specific_header'>
-  <h1>Stores#index</h1>
+  <h1>Stores of Mario Kingdom</h1>
 </div>
 
 <% @stores.each do |store| %>
-<div class='ui segment'>
+<div class='ui segment store'>
+  <%= link_to store_path(store) do %>
   <%= store.name %><br>
   Level: <%= store.level %><br>
   <%= store.classification %><br>
+  <% end %>
 </div>
 <% end %>

@@ -33,12 +33,17 @@ promotions = Promotion.create([
      ])
 
 posts = Post.create([
+
   {character_id: '6',
+   title: "Mario's Kingdom Will be Closed on Friday due to Blackout!",
+   body: "Electrical difficulties are the death of video game characters =("},
+      {character_id: '6',
     title:"New Mario's Kingdom App is online!",
-    body: "A new app has been developed for us, displaying all the cool details our Kingdom
-           has to offer. Let us know your thoughts and feedback!"},
-  {character_id: '6',
-   title: "New Mario's Kingdom App is online!",
-   body: "A new app has been developed for us, displaying all the cool details our Kingdom
-          has to offer. Let us know your thoughts and feedback!"}
+    body: "A new app has been developed for us, 
+           displaying all the cool details our Kingdom
+           has to offer. Let us know your thoughts and feedback!"}
+])
+
+map = Map.create([
+  {map: "marioworld.jpg"}
 ])

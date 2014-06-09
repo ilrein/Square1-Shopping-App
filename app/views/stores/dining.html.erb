@@ -1,6 +1,6 @@
 <h1 class='page_specific_header'>Dining</h1>
 <% @stores.each do |store| %>
-<div class='store_container ui segment'>
+<div class='store ui segment'>
   <%= link_to store.name, store_path(store) %><br>
   Level: <%= store.level %><br>
   <%= store.classification %><br>

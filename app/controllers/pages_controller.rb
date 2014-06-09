@@ -2,10 +2,9 @@ class PagesController < ApplicationController
   def index
   end
   def map
+    @map = Map.find(1)
   end
   def hours
-  end
-  def giftcard
   end
   def social
   end

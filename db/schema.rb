@@ -11,12 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140607191033) do
+ActiveRecord::Schema.define(version: 20140608135249) do
 
   create_table "characters", force: true do |t|
     t.string   "avatar"
     t.string   "name"
     t.integer  "store_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "maps", force: true do |t|
+    t.string   "map"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

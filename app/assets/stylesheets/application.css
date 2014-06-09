@@ -13,3 +13,8 @@
  *= require_tree .
  *= require_self
  */
+
+  a {
+    -moz-text-decoration-line: none;
+    text-decoration: none;
+  }

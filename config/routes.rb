@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   get 'stores/dining', to: 'stores#dining'  
   get 'promotions/all'
   get 'stores/index'
+  get 'pages/map', to: 'pages#map', as: 'map'
+  get 'pages/hours', to: 'pages#hours', as: 'hours'
   
   get 'characters/index', to: 'characters#index', as: ''
   get 'characters/whatsnew', to: 'characters#whatsnew', as: 'whatsnew'    
@@ -16,6 +18,8 @@ Rails.application.routes.draw do
   resources :stores do 
     resources :promotions
   end
+
+  #resources :posts
 
 
     
